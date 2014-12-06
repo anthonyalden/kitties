@@ -1,20 +1,91 @@
 /*@import a Google Font here!*/
-
+@import url(http://fonts.googleapis.com/css?family=Lobster);
 body {
+	background-image: url("../images/background.png");
+	
 
 }
 
 #container {
+	
+text-align: center;
+position: relative;
+
+
 
 }
 
 .dashed {
 
+	border: dashed 2px black;
+	border-radius: 20px;
+	padding: 0px;
+	margin-top: 40px;
+	position: relative;
+	
+
+}
+
+#left{
+	float: left;
+	margin-right: 30px;
+	left: 200px;
+}
+
+#right{
+	float: right;
+	right: 200px;
+
+	
+}
+
+ul{
+
+background-color: white;
+display: block;
+float: right;
+position: relative;
+left: 200px;
+list-style: none;
+padding: 75px;
+border-radius: 10px;
+
+
 }
 
 .left-container, .right-container {
-
+	width: 350px;
+	height: 550px;
+	
+	display: block;
+	position: relative;
+	text-align: center;
+	margin-top: 5px;
+	
 }
+
+.kittie-image{
+	padding: 20px;
+}
+
 h1 {
 	
+	
+}
+
+h2{
+	font-family: "Lobster";
+}
+h3{
+	font-family: "Lobster";
+}
+
+.adopt-btn{
+	position: relative;
+	top: -20px;
+}
+
+.kittie-title{
+	position: relative;
+	top: 10px;
 }
