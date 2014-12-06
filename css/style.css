@@ -39,13 +39,27 @@ position: relative;
 	
 }
 
-ul{
+#left ul{
+
+background-color: white;
+display: block;
+float: left;
+position: relative;
+left: 200px;
+list-style: none;
+padding: 75px;
+border-radius: 10px;
+
+
+}
+
+#right ul{
 
 background-color: white;
 display: block;
 float: right;
 position: relative;
-left: 200px;
+right: 200px;
 list-style: none;
 padding: 75px;
 border-radius: 10px;
@@ -61,7 +75,6 @@ border-radius: 10px;
 	position: relative;
 	text-align: center;
 	margin-top: 5px;
-	
 }
 
 .kittie-image{
@@ -82,8 +95,9 @@ h3{
 
 .adopt-btn{
 	position: relative;
-	top: -20px;
+	top: -5px;
 }
+
 
 .kittie-title{
 	position: relative;
