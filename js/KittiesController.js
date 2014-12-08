@@ -37,14 +37,16 @@ angular
 					}
 
 				]
-
+		// exported functions
 		this.adopted = adopted;
 		this.unadopted=unadopted;
 
+		// set adopted to true so that it toggle to right side of screen
 		function adopted(kitten){
 			kitten.adopted=true;
 		}
 
+		// set addopted to false so that it toggle to left side of screen
 		function unadopted(kitten){
 			kitten.adopted=false;
 		}

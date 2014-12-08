@@ -23,6 +23,7 @@
 		<div  id="left" >
 			
 			<div  >
+				<!-- left side cats that need adoption -->
 				<ul  >
 					<h2 class ="kittie-title">Kitties For Adoption</h2>
 					<li class = "dashed" class="left-container" ng-repeat="kitten in kitties.kittieArray | filter: { adopted:false} ">
@@ -31,7 +32,6 @@
 						<h3>I am {{kitten.monthsOld}} months old</h3>
 						<h3>I am a {{kitten.gender}}</h3>
  						<img class="kittie-image" src="{{kitten.image}}">
-						<!-- <input type="checkbox" name="Adopt?" ng-model={{kitten.adopted}} ng-true-value="I wilsh" ng-click="kitties.adopted(kitten)"/> -->
 						<br><span class="adopt-label">Adopt?<input type = "checkbox" ng-model="kitten.adopted"></button></span>
 					</li>
 				</ul>
@@ -41,6 +41,7 @@
 		<div  id="right" >
 			
 			<div  >
+				<!-- right side cats that are adopted -->
 				<ul  >
 					<h2 class ="kittie-title">At their forever homes</h2>
 					<li class = "dashed" class="right-container" ng-repeat="kitten in kitties.kittieArray | filter: { adopted:true} ">
@@ -49,8 +50,6 @@
 						<h3>I am {{kitten.monthsOld}} months old</h3>
 						<h3>I am a {{kitten.gender}}</h3>
 						 <img class="kittie-image" src="{{kitten.image}}">
-						<!-- <h4>Adopt</h4> -->
-						<!-- <input type="checkbox" name="Adopt?" ng-model="adopted" ng-true-value="I wilsh" ng-click="kitties.unadopted(kitten)"/> -->
 						<br><span class="adopt-label">Adopt?<input type="checkbox" ng-model="kitten.adopted"/></span>
 					</li>
 				</ul>
